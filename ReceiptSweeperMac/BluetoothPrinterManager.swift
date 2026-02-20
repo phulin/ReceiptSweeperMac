@@ -60,6 +60,7 @@ class BluetoothPrinterManager: NSObject, ObservableObject, CBCentralManagerDeleg
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         if central.state == .poweredOn {
             connectionState = "Disconnected"
+            startScanning()
         } else {
             connectionState = "Bluetooth is off or unavailable"
         }

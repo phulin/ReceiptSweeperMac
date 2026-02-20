@@ -36,7 +36,7 @@ struct ReceiptFormatter {
         output += "ACTION: \(action.rawValue.uppercased()) @ \(charLabel(coordinate.y))\(coordinate.x)\n"
         output += "STATUS: \(status)\n"
         output += "TIME: \(timestamp)\n"
-        output += "--------------------------------\n\n\n"
+        output += "-------------------------\n\n\n"
         
         return output
     }

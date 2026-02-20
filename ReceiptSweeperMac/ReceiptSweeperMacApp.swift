@@ -13,5 +13,6 @@ struct ReceiptSweeperMacApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowStyle(.hiddenTitleBar)
     }
 }
