@@ -13,7 +13,7 @@ class TextRenderer {
     static func renderTextToPrinterLines(_ text: String) -> [[UInt8]] {
         let width = 384
         
-        let font = NSFont.systemFont(ofSize: 32)
+        let font = NSFont.monospacedSystemFont(ofSize: 24, weight: .regular)
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineBreakMode = .byWordWrapping
         
